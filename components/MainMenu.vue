@@ -2,33 +2,36 @@
   <ul id="nm-main-menu-ul" class="nm-menu">
     <!-- Link đến trang Shop -->
     <li
-      id="menu-item-2437"
-      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item current_page_item menu-item-2437"
-    >
+      id="menu-item-1"
+      class="menu-item menu-1">
       <NuxtLink to="/" aria-current="page">Shop</NuxtLink>
     </li>
     
     <!-- Link đến trang Giới Thiệu -->
     <li
-      id="menu-item-2432"
-      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2432"
-    >
+      id="menu-item-2"
+      class="menu-item menu-2">
       <NuxtLink to="/">Giới Thiệu</NuxtLink>
     </li>
     
     <!-- Link đến trang Giao Hàng -->
     <li
-      id="menu-item-2545"
-      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-2545"
-    >
+      id="menu-item-3"
+      class="menu-item menu-3">
       <NuxtLink to="/">Giao Hàng</NuxtLink>
     </li>
     
+    <!-- Link đến trang Tài khoản -->
+    <li
+      id="menu-item-4"
+      class="menu-item menu-4">
+      <NuxtLink to="/login" class="account-link">Tài Khoản</NuxtLink>
+    </li>
+
     <!-- Link đến trang Thanh Toán -->
     <li
-      id="menu-item-2620"
-      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2620"
-    >
+      id="menu-item-5"
+      class="menu-item menu-5">
       <NuxtLink to="/">Thanh Toán</NuxtLink>
     </li>
   </ul>
@@ -37,7 +40,12 @@
 <script>
 export default {
   name: "MainMenu",
+ 
 };
+definePageMeta({
+  layout: 'default',
+  
+})
 </script>
 
 <style scoped>
@@ -63,5 +71,15 @@ export default {
 
 .nm-menu a:hover {
   color: #007bff; /* Màu khi hover */
+}
+
+
+
+/* Style riêng cho mục Tài Khoản */
+.account-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 20px;
 }
 </style>

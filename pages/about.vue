@@ -9,6 +9,6 @@ definePageMeta({
     <logo />
     <MainMenu />
     <Banner />
-    <NuxtLink to="/">Index Page</NuxtLink>
+    <NuxtLink to="/">index.page</NuxtLink>
   </div>
 </template>
